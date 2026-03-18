@@ -11,11 +11,13 @@ sys.path.insert(0, os.path.dirname(__file__))
 import streamlit as st
 
 # ── Page config (MUST be first Streamlit call) ────────────────────────────────
+from streamlit import _config
 st.set_page_config(
     page_title="Churn Intelligence | Bank Analytics",
     page_icon="🏦",
     layout="wide",
     initial_sidebar_state="expanded",
+    menu_items={}
 )
 
 # ── Global CSS ────────────────────────────────────────────────────────────────
